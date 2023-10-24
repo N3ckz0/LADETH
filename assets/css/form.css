@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: linear-gradient(rgba(5, 7, 12, 0.425),rgba(5, 7, 12, 0.425)),url('../img/img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+form{
+	text-align: center;
+    color: #fff;
+    box-shadow: 0px 0px 25px #222;
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+}
+
+.color-white{
+	color: #fff!important;
+}

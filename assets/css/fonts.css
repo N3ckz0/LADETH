@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Raleway;
+  src: url('../fuentes/Raleway-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fuentes/Montserrat-Light.ttf') format('truetype');
+}
