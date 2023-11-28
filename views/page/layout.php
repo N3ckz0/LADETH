@@ -6,7 +6,7 @@
 	<title>Laboratorio de Consultoría</title>
 	<!--Bootstrap Css-->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/styles.css?v3">
 </head>
 <body>
 
@@ -24,10 +24,10 @@
 			</button>
 		</a>
 		<ul>
-			<li><button class="btn" onclick="loadDoc('index')">Inicio</button></li>
-			<li><button class="btn" onclick="loadDoc('about')">Acerca de Nosotros</button></li>
-			<li><button class="btn" onclick="loadDoc('services')">Servicios</button></li>
-			<li><button class="btn" onclick="loadDoc('contact')">Contacto</button></li>
+			<li><button class="btn" onclick="loadDoc('index',funcion1)">Inicio</button></li>
+			<li><button class="btn" onclick="loadDoc('about',funcion1)">Acerca de Nosotros</button></li>
+			<li><button class="btn" onclick="loadDoc('services',funcion1)">Servicios</button></li>
+			<li><button class="btn" onclick="loadDoc('contact',funcion1)">Contacto</button></li>
 			<li><a class="btn btn-success btnSesion" href="index.php?c=webpage&a=login">Iniciar Sesion</a></li>
 		</ul>
 	</nav>
@@ -35,11 +35,9 @@
 	<div class="fluid-container" id="container"></div>
 
 	<!--Bootstrap Js-->
+	<script src="assets/js/index.js"></script>
+	<script src="assets/js/app.js"></script>
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<!--Carga los archivos en un container-->
-	<script src="assets/js/scriptFiles.js"></script>
-	<!--Funcionalidad de la pagina y aplicacion-->
-	<script src="assets/js/app.js"></script>
 </body>
 </html>

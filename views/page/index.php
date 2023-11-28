@@ -1,7 +1,7 @@
 <!--INICIO-->
 <div class="container-fluid" style="background: #F8F9F9;" id="home">
-	<section class="d-flex flex-column">
-		<h2 class="display-2 fw-bold mt-5 p-5">LADETH</h2>
+	<section class="d-flex flex-column justify-content-center align-items-center">
+		<h2 class="display-2 fw-bold p-5">LADETH</h2>
 		<div class="row w-100">
 			<!--MISION Y VISION-->
 			<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 d-flex flex-column">

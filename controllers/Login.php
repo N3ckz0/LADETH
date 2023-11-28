@@ -31,17 +31,17 @@
 				switch ($data["user2"]["fkRoles"]) {
 				    case "1":
 				    	/*CONTEO DE USUARIOS*/
-				    	$_SESSION["AllUsers"] = $obj2->countUsers();
-				    	$_SESSION["Admins"] = $obj2->countAdmins();
-				    	$_SESSION["Consultants"] = $obj2->countConsultants();
-				    	$_SESSION["Students"] = $obj2->countStudents();
+				    	$data["AllUsers"] = $obj2->countUsers();
+				    	$data["Admins"] = $obj2->countAdmins();
+				    	$data["Consultants"] = $obj2->countConsultants();
+				    	$data["Students"] = $obj2->countStudents();
 				    	/*CONTEO DE CITAS*/
-				    	$_SESSION["AllDates"] = $obj3->countDates();
-				    	$_SESSION["Pending"] = $obj3->countPendingDates();
-				    	$_SESSION["Acepted"] = $obj3->countAceptedDates();
-				    	$_SESSION["Declined"] = $obj3->countDeclinedDates();
+				    	$data["AllDates"] = $obj3->countDates();
+				    	$data["Pending"] = $obj3->countPendingDates();
+				    	$data["Acepted"] = $obj3->countAceptedDates();
+				    	$data["Declined"] = $obj3->countDeclinedDates();
 				    	$_SESSION["admin"] = $data["user2"];
-				        require_once "views/app/admin/layout.php";
+				        require_once "views/app/admin/index.php";
 				        break;
 				    case "3":
 				    	/*CONTEO DE CITAS*/
