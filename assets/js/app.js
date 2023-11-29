@@ -124,9 +124,13 @@ function showOptionsAsList(){
 	let selectElement = document.getElementById("servicios");
 	/*List*/
 	let listElement = document.getElementById("options-list");
+	/*DivList*/
+	let NodeList = document.getElementById("options");
+
 	/*Valor del select*/
 	let selectedValue = selectElement.value;
-	/*Opciones*/
+
+	/*Opciones LI*/
 	let opt1 = document.createElement("li");
 	let opt2 = document.createElement("li");
 	let opt3 = document.createElement("li");
@@ -160,15 +164,67 @@ function showOptionsAsList(){
 	let opt31 = document.createElement("li");
 	let opt32 = document.createElement("li");
 	let opt33 = document.createElement("li");
+
+	//Opciones Div
+	let op1 = document.createElement("div");
+	let op2 = document.createElement("div");
+	let op3 = document.createElement("div");
+	let op4 = document.createElement("div");
+	let op5 = document.createElement("div");
+	let op6 = document.createElement("div");
+	let op7 = document.createElement("div");
+	let op8 = document.createElement("div");
+	let op9 = document.createElement("div");
+	let op10 = document.createElement("div");
+	let op11 = document.createElement("div");
+	let op12 = document.createElement("div");
+	let op13 = document.createElement("div");
+	let op14 = document.createElement("div");
+	let op15 = document.createElement("div");
+	let op16 = document.createElement("div");
+	let op17 = document.createElement("div");
+	let op18 = document.createElement("div");
+	let op19 = document.createElement("div");
+	let op20 = document.createElement("div");
+	let op21 = document.createElement("div");
+	let op22 = document.createElement("div");
+	let op23 = document.createElement("div");
+	let op24 = document.createElement("div");
+	let op25 = document.createElement("div");
+	let op26 = document.createElement("div");
+	let op27 = document.createElement("div");
+	let op28 = document.createElement("div");
+	let op29 = document.createElement("div");
+	let op30 = document.createElement("div");
+	let op31 = document.createElement("div");
+	let op32 = document.createElement("div");
+	let op33 = document.createElement("div");
+
+	/*Elimina los li del ul*/
 	function clearList(){
 		while (listElement.firstChild) {
 		    listElement.removeChild(listElement.firstChild);
 		}
 	}
 
+	function clearDivList(){
+		/*Divs dentro de la DivList*/
+		let divs = NodeList.getElementsByTagName("div");
+		/*Divs convertidos en lista*/
+		let divsArray = Array.from(divs);
+
+		divsArray.forEach(function(div) {
+	    	div.remove();
+	  	});
+	}
+
+	/*Elimina los div del NodeList*/
+
+
 	/*Se ingresa el valor del select para saber las opciones que se van a mostrar*/
 	switch (selectedValue) {
 	  	case '1':
+	  			/*Info UL*/
 	  			clearList();
 	  			opt1.textContent = "Diseño de CV";
 	  			opt1.classList.add("list-group-item");
@@ -182,7 +238,16 @@ function showOptionsAsList(){
 	  			opt4.textContent = "Reglas de comportamiento en una entrevista de trabajo";
 	  			opt4.classList.add("list-group-item");
 	  			listElement.appendChild(opt4);
-
+	  			/*Info NodeList*/
+	  			clearDivList();
+	  			op1.innerHTML = "<p class='div-options'>Diseño de CV</p>";
+	  			NodeList.appendChild(op1);
+	  			op2.innerHTML = "<p class='div-options'>Diseño de cartas de presentación</p>";
+	  			NodeList.appendChild(op2);
+	  			op3.innerHTML = "<p class='div-options'>Código de vestimenta para una entrevista de trabajo</p>";
+	  			NodeList.appendChild(op3);
+	  			op4.innerHTML = "<p class='div-options'>Reglas de comportamiento en una entrevista de trabajo</p>";
+	  			NodeList.appendChild(op4);
 	    	break;
 	    case '2':
 	    		clearList();
@@ -198,6 +263,16 @@ function showOptionsAsList(){
 	    		opt8.textContent = "Plan de cultura organizacional";
 	    		opt8.classList.add("list-group-item")
 	    		listElement.appendChild(opt8);
+	    		/*Info NodeList*/
+	  			clearDivList();
+	  			op5.innerHTML = "<p class='div-options'>Diagnóstico de clima</p>";
+	  			NodeList.appendChild(op5);
+	  			op6.innerHTML = "<p class='div-options'>Plan de clima organizacional</p>";
+	  			NodeList.appendChild(op6);
+	  			op7.innerHTML = "<p class='div-options'>Diagnóstico de cultura organizacional</p>";
+	  			NodeList.appendChild(op7);
+	  			op8.innerHTML = "<p class='div-options'>Plan de cultura organizacional</p>";
+	  			NodeList.appendChild(op8);
 	    	break;
 	    case '3':
 	    		clearList();
@@ -213,6 +288,16 @@ function showOptionsAsList(){
 	    		opt12.textContent = "Elaboración de manuales de organización";
 	    		opt12.classList.add("list-group-item")
 	    		listElement.appendChild(opt12);
+	    		/*Info NodeList*/
+	  			clearDivList();
+	  			op9.innerHTML = "<p class='div-options'>Creación de la estructura organizacional</p>";
+	  			NodeList.appendChild(op9);
+	  			op10.innerHTML = "<p class='div-options'>Análisis de puestos</p>";
+	  			NodeList.appendChild(op10);
+	  			op11.innerHTML = "<p class='div-options'>Diseño de puestos</p>";
+	  			NodeList.appendChild(op11);
+	  			op12.innerHTML = "<p class='div-options'>Elaboración de manuales de organización</p>";
+	  			NodeList.appendChild(op12);
 	    	break;
 	    case '4':
 	    		clearList();
@@ -225,12 +310,24 @@ function showOptionsAsList(){
 	    		opt15.textContent = "Proceso de selección de personal";
 	    		opt15.classList.add("list-group-item")
 	    		listElement.appendChild(opt15);
+	    		/*Info NodeList*/
+	  			clearDivList();
+	  			op13.innerHTML = "<p class='div-options'>Proceso de reclutamiento</p>";
+	  			NodeList.appendChild(op13);
+	  			op14.innerHTML = "<p class='div-options'>Proceso de assessment</p>";
+	  			NodeList.appendChild(op14);
+	  			op15.innerHTML = "<p class='div-options'>Proceso de selección de personal</p>";
+	  			NodeList.appendChild(op15);
 	    	break;
 	    case '5':
 	    		clearList();
 	    		opt16.textContent = "Proceso de evaluación del desempeño";
 	    		opt16.classList.add("list-group-item")
 	    		listElement.appendChild(opt16);
+	    		/*Info NodeList*/
+	  			clearDivList();
+	  			op16.innerHTML = "<p class='div-options'>Proceso de evaluación del desempeño class='div-options'</p>";
+	  			NodeList.appendChild(op16);
 	    	break;
 	    case '6':
 	    		clearList();
@@ -246,6 +343,16 @@ function showOptionsAsList(){
 	    		opt20.textContent = "Planes de desarrollo y carrera";
 	    		opt20.classList.add("list-group-item")
 	    		listElement.appendChild(opt20);
+	    		/*Info NodeList*/
+	  			clearDivList();
+	  			op17.innerHTML = "<p class='div-options'>Inducción laboral</p>";
+	  			NodeList.appendChild(op17);
+	  			op18.innerHTML = "<p class='div-options'>Alineación del personal con la filosofía de la empresa</p>";
+	  			NodeList.appendChild(op18);
+	  			op19.innerHTML = "<p class='div-options'>Indicadores de desempeño laboral</p>";
+	  			NodeList.appendChild(op19);
+	  			op20.innerHTML = "<p class='div-options'>Planes de desarrollo y carrera</p>";
+	  			NodeList.appendChild(op20);
 	    	break;
 	    case '7':
 	    		clearList();
@@ -255,6 +362,12 @@ function showOptionsAsList(){
 	    		opt22.textContent = "Plan de capacitación";
 	    		opt22.classList.add("list-group-item")
 	    		listElement.appendChild(opt22);
+	    		/*Info NodeList*/
+	  			clearDivList();
+	  			op21.innerHTML = "<p class='div-options'>Diagnóstico de necesidades de capacitación</p>";
+	  			NodeList.appendChild(op21);
+	  			op22.innerHTML = "<p class='div-options'>Plan de capacitación</p>";
+	  			NodeList.appendChild(op22);
 	    	break;
 	    case '8':
 	    		clearList();
@@ -267,6 +380,14 @@ function showOptionsAsList(){
 	    		opt25.textContent = "Rescisiones de trabajo";
 	    		opt25.classList.add("list-group-item")
 	    		listElement.appendChild(opt25);
+	    		/*Info NodeList*/
+	  			clearDivList();
+	  			op23.innerHTML = "<p class='div-options'>Contrato laboral</p>";
+	  			NodeList.appendChild(op23);
+	  			op24.innerHTML = "<p class='div-options'>Prestaciones básicas</p>";
+	  			NodeList.appendChild(op24);
+	  			op25.innerHTML = "<p class='div-options'>Rescisiones de trabajo</p>";
+	  			NodeList.appendChild(op25);
 	    	break;
 	    case '9':
 	    		clearList();
@@ -288,6 +409,20 @@ function showOptionsAsList(){
 	    		opt31.textContent = "Requisitos para el trámite de la e-firma";
 	    		opt31.classList.add("list-group-item")
 	    		listElement.appendChild(opt31);
+	    		/*Info NodeList*/
+	  			clearDivList();
+	  			op23.innerHTML = "<p class='div-options'>Cálculo de nómina</p>";
+	  			NodeList.appendChild(op23);
+	  			op24.innerHTML = "<p class='div-options'>Vacaciones</p>";
+	  			NodeList.appendChild(op24);
+	  			op25.innerHTML = "<p class='div-options'>Utilidades</p>";
+	  			NodeList.appendChild(op25);
+	  			op23.innerHTML = "<p class='div-options'>Aguinaldo</p>";
+	  			NodeList.appendChild(op23);
+	  			op24.innerHTML = "<p class='div-options'>Finiquito</p>";
+	  			NodeList.appendChild(op24);
+	  			op25.innerHTML = "<p class='div-options'>Requisitos para el trámite de la e-firma</p>";
+	  			NodeList.appendChild(op25);
 	    	break;
 	    case '10':
 	    		clearList();
@@ -297,6 +432,12 @@ function showOptionsAsList(){
 	    		opt33.textContent = "Tipos y cálculo-2 de incapacidades";
 	    		opt33.classList.add("list-group-item")
 	    		listElement.appendChild(opt33);
+	    		/*Info NodeList*/
+	  			clearDivList();
+	  			op23.innerHTML = "<p class='div-options'>Proceso de reclutamiento</p>";
+	  			NodeList.appendChild(op23);
+	  			op24.innerHTML = "<p class='div-options'>Proceso de reclutamiento</p>";
+	  			NodeList.appendChild(op24);
 	    	break;
 	}
 
@@ -358,3 +499,4 @@ function selectDate(){
 
 	inputElement2.value = selectedValue;
 }
+

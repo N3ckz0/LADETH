@@ -20,7 +20,7 @@
 </head>
 <body>
 
-	<?php require "views/app/admin/layout.php" ?>
+	<?php require "views/app/admin/menu.php" ?>
 
 	<main class="container">
 		<h2 class="display-4 p-3 text-center">Usuarios</h2>

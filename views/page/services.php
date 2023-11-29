@@ -101,9 +101,11 @@
 			</div>
 			<div id="servicesResponsive">
 				<div class="row w-100 p-3 g-3">
+					<!--Subtitle-->
 					<div class="col-md-12 title">
 						<h2>Elige el servicio y se mostraran sus opciones</h2>
 					</div>
+					<!--Select-->
 					<div class="col-md-12 col-sm-12 mt-4">
 						<select class="form-select" aria-label="Default select example" id="servicios" onchange="showOptionsAsList()">
 						  	<option selected>Elige el servicio</option>
@@ -119,11 +121,15 @@
 						  	<option value="10">Higiene y seguridad laboral</option>
 						</select>
 					</div>
+					<!--Disponible Options-->
 					<div class="col-md-12 col-sm-12 mt-4">
 						<h2 class="text-start">Opciones disponibles</h2>
 						<ul class="list-group" id="options-list">
 						  	<li class="list-group-item">No has seleccionado un servicio.</li>
 						</ul>
+						<div class="options" id="options">
+							<div><p class="div-options">No has seleccionado un servicio.</p></div>
+						</div>
 					</div>
 				</div>
 			</div>
